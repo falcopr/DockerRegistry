@@ -4,7 +4,6 @@ docker run -d \
   --name registry \
   -v `pwd`/auth:/auth \
   -v `pwd`/ssl:/ssl \
-  -v `pwd`/ssl:/ssl \
   -e REGISTRY_AUTH=htpasswd \
   -e REGISTRY_AUTH_HTPASSWD_REALM="Registry Realm" \
   -e REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd \
